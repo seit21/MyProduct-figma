@@ -1,0 +1,141 @@
+.footer{
+    display: block;
+    width: 1100px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+          &__main {
+            display: flex;
+             width: 100%;
+             height: 205px;
+             
+                
+                 &-item1{
+                    width: 275px;
+                    height: 100%;
+                    
+                        &-logo{
+                            width: 163px;
+                            height: 30px;
+                           
+                        }
+                        &-mass{
+                            margin-top: 25px;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 163px;
+                            height: 30px;
+                            
+                        }
+                 }
+                 &-item2{
+                    width: 250px;
+                    height: 100%;
+                    
+                        &-h4, a {
+                            text-decoration: none;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 30px; /* 150% */
+                            color: #22343D;
+                        }
+                          &-p , a {
+                            text-decoration: none;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 35px; /* 218.75% */
+                            color: #22343D;
+                        }
+                 }
+                
+                 &-item4{
+                    width: 325px;
+                    height: 100%;
+                  
+                        &-h4{
+                            width: 280px;
+                            height: 57px;
+                            flex-shrink: 0;
+                            margin-bottom: 34px;
+                            color: #22343D;
+                            font-family: Poppins;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 30px; /* 150% */
+                        }
+                        &-input, input{
+                            min-width: 325px;
+                            height: 48px;
+                            flex-shrink: 0;
+                            border-radius: 4px;
+                            border: 1px solid #BCD0E5;
+                            background: #FFF;
+                        }
+                        &-btn{
+                            margin-top: 21px;
+                            width: 131px;
+                            height: 39px;
+                            flex-shrink: 0;
+                            border-radius: 4px;
+                            background: #02897A;
+                            color: #FFF;
+                            text-align: center;
+                            font-family: Poppins;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                        }
+                 }
+          }
+          &__text {
+            margin-top: 16px;
+             width: 100%;
+             height: 45px;
+             text-align: center;
+             
+          }
+}
+
+@media screen  and (max-width:411px) {
+    .footer{
+        width: 100%;
+        height: 810px;
+        
+            &__main{
+                display: block;
+                width: 325px;
+                height: 755px;
+                margin: 0 auto;
+                   &-item1{
+                      width: 163px;
+                      height: 95px;
+                      margin: 0 auto;
+                   }
+                   &-item2{
+                    width: 120px;
+                    height: 180px;
+                    margin: 32px auto;
+                          
+                   }
+                   &-item4{
+                          width: 325px;
+                          height: 200px;
+                          margin: 32px auto;
+                             &-h4{
+                               margin-left: 18px; 
+                             }
+                             &-btn{
+                                margin-left: 95px;
+                             }
+                   }
+            }
+    }
+}
